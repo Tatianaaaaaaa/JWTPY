@@ -1,4 +1,1 @@
-from fastapi import FastAPI, status, HTTPException
-from jose import JWTError, jwt
-from pydantic import BaseModel
-from datetime import datetime, timedelta
+import jwt from jwt import PyJWKClient
