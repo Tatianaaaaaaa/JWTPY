@@ -1,7 +1,7 @@
 import jwt
 
 
-payload_data = {
+def handle(data): {
     'sub': '4242',
     'name': 'Jessica Temporal',
     'nickname': 'Jess'
@@ -9,4 +9,4 @@ payload_data = {
 
 secret = 'my_super_secret'
 token = jwt.encode(payload=payload_data, key=secret)
-print(token)
+return data
