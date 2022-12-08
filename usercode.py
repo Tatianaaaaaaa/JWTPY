@@ -39,11 +39,11 @@ b9aCgUDIsgSuU41+Alc0hZ+09rC0yfv80fCZg2la74BE2rc5H+qvPKYaGpH8y5NN
 AuBeDNVlpyPEMtfocNoPxA==
 -----END PRIVATE KEY-----
 """
-
-token = jwt.encode(
+def handle(data):
+data = jwt.encode(
     payload=payload_data,
     key=key,
     algorithm='RS256'
 )
 
-print(token)
+return data
