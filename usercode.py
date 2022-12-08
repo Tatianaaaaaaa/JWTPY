@@ -1,3 +1,5 @@
+import jwt
+
 payload_data = {
     'sub': '4242',
     'name': 'Jessica Temporal',
