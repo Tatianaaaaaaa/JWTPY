@@ -1,2 +1,3 @@
-import urllib.request
-import json
+pip install fastapi
+pip install uvicorn
+pip install python-jose
