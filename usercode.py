@@ -1,4 +1,5 @@
 import jwt
+from cryptography.hazmat.primitives import serialization
 
 payload_data = {
     'sub': '4242',
