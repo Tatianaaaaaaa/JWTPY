@@ -1,6 +1,12 @@
-git clone git@github.com:auth0-blog/jwts-in-python.git
-cd jwts-in-python
-python3 -m venv .env
-source .env/bin/activate
-pip install -U pip
-pip install -r requirements.txt
+import jwt
+
+
+payload_data = {
+    'sub': '4242',
+    'name': 'Jessica Temporal',
+    'nickname': 'Jess'
+}
+
+secret = 'my_super_secret'
+token = jwt.encode(payload=payload_data, key=secret)
+print(token)
