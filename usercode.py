@@ -1,5 +1,6 @@
 import urllib.request
 import json
+import Pillow 
 
 def handle(data):
     req = urllib.request.Request("https://reqres.in/api/users?page=1", method="GET")
