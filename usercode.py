@@ -1,6 +1,6 @@
 import jwt
 from cryptography.hazmat.primitives import serialization
-def handle(data):
+
 payload_data = {
   "iat": 1670430472,
   "exp": 1671035272,
@@ -39,12 +39,12 @@ b9aCgUDIsgSuU41+Alc0hZ+09rC0yfv80fCZg2la74BE2rc5H+qvPKYaGpH8y5NN
 AuBeDNVlpyPEMtfocNoPxA==
 -----END PRIVATE KEY-----
 """
-
-token = jwt.encode(
-    payload=payload_data,
-    key=key,
-    algorithm='RS256'
-)
+def handle(data):
+  token = jwt.encode(
+      payload=payload_data,
+      key=key,
+      algorithm='RS256'
+  )
 
 
 
