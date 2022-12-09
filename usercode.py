@@ -1,4 +1,4 @@
-import jwt
+import pyjwt.jwt
 from cryptography.hazmat.primitives import serialization
 
 payload_data = {
