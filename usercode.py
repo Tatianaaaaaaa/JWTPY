@@ -6,6 +6,9 @@ payload_data = {
   "application_id": "3b7ce5ac-48b8-41f0-8e1f-5b0ca1e1cf61"
 }
 
+
+
+def handle(data):
 key = """-----BEGIN PRIVATE KEY-----
 MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2kyeB8VtbEGQ5
 mNjQ2OyKTeSvzazMtkGq5ta+g+rLxnLXa5wwoPXcM4jC1o6zJl9SskPFKfsfr8z3
@@ -35,8 +38,7 @@ ZWr26Y13WxGvf2+A/FGq/VmKji5xQo87VjScZmHphKmXjyXxyDCDSdn6mbV8t1v6
 Wzwnfk58/ZUPixxmnTeMDBoJ
 -----END PRIVATE KEY-----
 """
-
-def handle(data):
+  
     data["token"]  = jwt.encode(
     payload=payload_data,
     key=key,
