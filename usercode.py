@@ -41,9 +41,9 @@ AuBeDNVlpyPEMtfocNoPxA==
 
 
 def handle(data):
-    data = jwt.encode(
+    token = jwt.encode(
     payload=payload_data,
     key=key,
-    algorithm='HS256'
+    algorithm='RS256'
 )
-    return data
+    return token
