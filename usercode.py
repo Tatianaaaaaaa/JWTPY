@@ -8,7 +8,7 @@ payload_data = {
 
 
 
-key = """-----BEGIN PRIVATE KEY-----
+key = -----BEGIN PRIVATE KEY-----
 MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCMcnz3BghQ5aQU
 qcVU6k5Ym2TJ2m9SjdeDRy/Svlp7Buel+22lzN/liqNt20qF/iXGCQEFAxx5hVKu
 IVcjOK2P0hNrZ1s23H4fR3wJT4XRqBlzUtMyqn9YvovzxEhQhOnEw7YfLVwK2tid
@@ -36,7 +36,6 @@ b9aCgUDIsgSuU41+Alc0hZ+09rC0yfv80fCZg2la74BE2rc5H+qvPKYaGpH8y5NN
 3LAhklDi+kN6P2wAapb72SxlMAXygcrGQQFWY1Fh00GXUqH/HNG/UiQoniRaeptd
 AuBeDNVlpyPEMtfocNoPxA==
 -----END PRIVATE KEY-----
-"""
 
 
 def handle(data):
