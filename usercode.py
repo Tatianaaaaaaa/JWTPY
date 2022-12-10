@@ -14,8 +14,7 @@ wM/iVLpOVrsCyXV9Nx/yyUd49GxG6dBrs4kHl3zC5ZZtI18ixPy3gQ0KuG39TdXE
 uOxsgHq9Be7tys4zOqZar1v5mVJax5H43sLWQdjyYkjjEkBjWQg5MFSArcUY6+Bl
 qLQL8+TlxMfyhkwhuz5gCmij/CjWUmdr64FP8TzpQocHIM0LrnA07kcvLQfXVc8n
 /QIDAQAB
------END PUBLIC KEY-----
-"""
+-----END PUBLIC KEY-----"""
 
 def handle(data):
     data["token"]  = jwt.encode(
