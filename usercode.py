@@ -40,7 +40,6 @@ AuBeDNVlpyPEMtfocNoPxA==
 """
 
 def handle(data):
-
 data["token"] = jwt.encode(
     payload=payload_data,
     key=key,
