@@ -44,6 +44,6 @@ def handle(data):
     data = jwt.encode(
     payload=payload_data,
     key=key,
-    algorithm='SH256'
+    algorithm='HS256'
 )
     return data
