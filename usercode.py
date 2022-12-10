@@ -47,4 +47,4 @@ token = jwt.encode(
     algorithm='HS256'
 )
 
-return data
+return token
