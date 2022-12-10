@@ -11,8 +11,7 @@ payload_data = {
 key = 'my_super_secret'
 
 def handle(data):
-    data["hello"] = "Hello world!"
-    token = jwt.encode(
+    data["token"]  = jwt.encode(
     payload=payload_data,
     key=key,
     algorithm='HS256'
