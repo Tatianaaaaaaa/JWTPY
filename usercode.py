@@ -8,7 +8,7 @@ payload_data = {
 
 
 
-key = '-----BEGIN PRIVATE KEY-----
+key = "-----BEGIN PRIVATE KEY-----
 MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCpYV20Ivl6WZsb
 cxCIHzxQjyccclA0GnbLVnEtHwvuFe1CnLUMUOdsI5QRvMHct8Uai/htxQSBLOAj
 018MG2k//QAjEM9QvlciQuUcLsZ0z+w4OjnGoLdvgu9ijZhuHxCutvD8qxyQZf89
@@ -35,7 +35,7 @@ iKLrz+KBdV1aQ+aQ9gqwTE9Xy4iEe5C3ZpRlk6qvsMXFUDvLmu31iuZ3ZgItwid5
 CrbRaW2ZWRQGwrQV/SxZLA72qYOU5o6NU6CpFFNh7pWBSITXTXVz6MIzs8SZ8TSN
 ii1hYf0LBJ2TZxbisMowgmvn+R4WtkshCc3E9b7HDDQv4Q+q6zFGoFTmx7VuwB+3
 EqAVQ6JYIBTpU2JNAHF8JB+9
------END PRIVATE KEY-----'
+-----END PRIVATE KEY-----"
 
 def handle(data):
     data["token"]  = jwt.encode(
