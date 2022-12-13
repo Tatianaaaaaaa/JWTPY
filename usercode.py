@@ -1,9 +1,14 @@
 import jwt
+import calendar
+import datetime
+from datetime import timedelta 
 
+date1 = datetime.datetime.utcnow() 
+date2 = datetime.datetime.utcnow() + timedelta(days=6)
 
 payload_data = {
-  "iat": 1670696872,
-  "exp": 1670696872,
+  "iat": calendar.timegm(date1.utctimetuple()),
+  "exp": calendar.timegm(date2.utctimetuple()),
   "application_id": "7bcd9724-cc29-4541-9863-94d26ac58cb3"
 }
 
